@@ -1,11 +1,12 @@
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 from .models import post
 
-admin.site.register(post)
+class postAdmin(SummernoteModelAdmin):  
+    summernote_fields = '__all__'
+
+admin.site.register(post,postAdmin)
 
 
-
-def __str__(self):
-    return self.title

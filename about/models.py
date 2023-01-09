@@ -14,7 +14,7 @@ class About(models.Model):
     freelance=models.CharField(max_length=10)
     Degree=models.CharField(max_length=10)
     phone =models.CharField(max_length=20)
-    PhEmailone=models.CharField(max_length=20)
+    PhEmailone=models.CharField(max_length=30)
     Website=models.CharField(max_length=20)
 
     def __str__(self):

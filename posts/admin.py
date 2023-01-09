@@ -1,16 +1,12 @@
 from django.contrib import admin
-from django_summernote.admin import SummernoteModelAdmin
+
 
 # Register your models here.
-from .models import post
+from about import models
 
-class postAdmin(SummernoteModelAdmin):  
-    summernote_fields = '__all__'
-
-    list_display=['title','author','tags']
-    list_filter=['author','tags']
-    search_fields=['title','content']
-
-admin.site.register(post,postAdmin)
-
-
+admin.site.register(models.About)
+admin.site.register(models.skils)
+admin.site.register(models.sumary)
+admin.site.register(models.Education)
+admin.site.register(models.service)
+admin.site.register(models.Testimonials)

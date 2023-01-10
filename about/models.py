@@ -5,8 +5,8 @@ from django.db import models
 
 class About(models.Model):
     name=models.CharField(max_length=20)
-    job=models.CharField(max_length=20)
-    subtitle=models.CharField(max_length=30)
+    job=models.CharField(max_length=50)
+    subtitle=models.CharField(max_length=900)
     image=models.ImageField(upload_to='about/')
     city=models.CharField(max_length=10)
     age=models.IntegerField()

@@ -25,12 +25,14 @@ class About(models.Model):
 
 
 class skils(models.Model):
+    title=models.CharField(max_length=20)
+    subtitle=models.CharField(max_length=400)
     skil=models.CharField(max_length=100)
     percentage=models.IntegerField()
 
+    
     def __str__(self):
         return self.skil
-
 
 
 

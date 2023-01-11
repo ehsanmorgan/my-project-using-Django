@@ -21,14 +21,16 @@ class About(models.Model):
         return self.name
 
 
-
+SKILL_TYPE={
+    ('Coding','Coding'),
+    ('Design','Design')
+}
 
 
 class skils(models.Model):
-    title=models.CharField(max_length=20)
-    subtitle=models.CharField(max_length=400)
     skil=models.CharField(max_length=100)
     percentage=models.IntegerField()
+    type=models.CharField(max_length=10,choices=SKILL_TYPE)
 
     
     def __str__(self):

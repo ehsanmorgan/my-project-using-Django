@@ -22,8 +22,8 @@ class About(models.Model):
 
 
 SKILL_TYPE={
-    ('Coding','Coding'),
-    ('Design','Design')
+    ('skill1','skill1'),
+    ('skill2','skill2')
 }
 
 

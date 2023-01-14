@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 # Create your views here.
-from .models import About,skils,service
+from .models import About,skils,service,Testimonials
 
 
 
@@ -11,9 +11,10 @@ def create(reqeust):
     skill1=skils.objects.filter(type='skill1')
     skill2=skils.objects.filter(type='skill2')
     Service=service.objects.all()
+    testimonials=Testimonials.objects.all()
     
 
-    return render (reqeust,'create.html',{'about':about,'skill1':skill1 , 'skill2':skill2, 'Service':Service,
+    return render (reqeust,'create.html',{'about':about,'skill1':skill1 , 'skill2':skill2, 'Service':Service, 'testimonials':testimonials
         
         
     

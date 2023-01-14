@@ -72,9 +72,8 @@ class service(models.Model):
 
 
 class Testimonials(models.Model):
-    title=models.CharField(max_length=20)
-    subtitle=models.CharField(max_length=100)
     content=models.TextField(max_length=400)
+    image=models.ImageField(upload_to='about/')
     name=models.CharField(max_length=20)
     job=models.CharField(max_length=20)
 
@@ -82,5 +81,4 @@ class Testimonials(models.Model):
     def __str__(self):
         return self.name
 
-    def __str__(self):
-        return self.title
+    

@@ -51,14 +51,30 @@ class sumary(models.Model):
 
 
 class Education(models.Model):
-    year=models.CharField(max_length=100)
     title=models.CharField(max_length=100)
+    year=models.CharField(max_length=100)
     place=models.CharField(max_length=50)
     description=models.CharField(max_length=100)
     last=models.BooleanField(default=False)
 
     def __str__(self):
         return self.title
+
+
+
+class Professional(models.Model):
+    title=models.CharField(max_length=100)
+    year=models.CharField(max_length=100)
+    place=models.CharField(max_length=50)
+    description=models.CharField(max_length=100)
+    
+    def __str__(self):
+        return self.title
+
+
+class meta:
+    ordering=('-year',)
+
 
 
 class service(models.Model):

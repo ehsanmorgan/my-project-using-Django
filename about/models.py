@@ -60,6 +60,9 @@ class Education(models.Model):
     def __str__(self):
         return self.title
 
+    class Meta:
+        ordering=('-year',)
+
 
 
 class Professional(models.Model):
@@ -67,13 +70,13 @@ class Professional(models.Model):
     year=models.CharField(max_length=100)
     place=models.CharField(max_length=50)
     description=models.CharField(max_length=100)
-    
+
     def __str__(self):
         return self.title
 
 
-class meta:
-    ordering=('-year',)
+    class Meta:
+        ordering=('-year',)
 
 
 

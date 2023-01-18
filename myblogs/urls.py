@@ -22,7 +22,6 @@ from about.views import create
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('summernote/', include('django_summernote.urls')),
     path('',create),
     path ('blog/',post_list),
     path('blog/create',create_post),

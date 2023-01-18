@@ -2,6 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from .models import About,skils,service,Testimonials,sumary,Education,Professional
+from posts.models import post
 
 
 
@@ -15,9 +16,10 @@ def create(reqeust):
     Sumary=sumary.objects.last()
     education=Education.objects.all()
     professional=Professional.objects.all()
+    Post=post.objects.all()
     
 
-    return render (reqeust,'create.html',{'about':about,'skill1':skill1 , 'skill2':skill2, 'Service':Service, 'testimonials':testimonials,'Sumary':Sumary,'education':education,'professional':professional,
+    return render (reqeust,'create.html',{'about':about,'skill1':skill1 , 'skill2':skill2, 'Service':Service, 'testimonials':testimonials,'Sumary':Sumary,'education':education,'professional':professional,'Post':Post
         
         
     

@@ -22,7 +22,7 @@ from about.views import create
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',create),
+    path('Ehsan Morgan',create),
     path ('blog/',post_list),
     path('blog/create',create_post),
     path ('blog/<int:id>',post_detail),

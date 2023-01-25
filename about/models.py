@@ -15,7 +15,7 @@ class About(models.Model):
     Degree=models.CharField(max_length=10)
     phone =models.CharField(max_length=20)
     PhEmailone=models.CharField(max_length=30)
-    
+
     Website=models.CharField(max_length=20)
 
     def __str__(self):
@@ -60,6 +60,10 @@ class Education(models.Model):
 
     def __str__(self):
         return self.title
+
+
+
+        
 
     class Meta:
         ordering=('-year',)

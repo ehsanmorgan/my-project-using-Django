@@ -1,6 +1,3 @@
-![alt text](ehsan1994.png)
 
 
-
-
-
+![plot](ehsan1994.png)

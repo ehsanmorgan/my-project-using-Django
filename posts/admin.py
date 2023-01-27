@@ -4,6 +4,10 @@ from django.contrib import admin
 # Register your models here.
 from about import models
 
+
+
+
+
 admin.site.register(models.About)
 admin.site.register(models.skils)
 admin.site.register(models.sumary)
